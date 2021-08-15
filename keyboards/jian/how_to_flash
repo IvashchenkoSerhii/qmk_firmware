@@ -1,0 +1,3 @@
+qmk flash -kb jian/handwired_split -km keyboard_split
+
+util/docker_build.sh jian/handwired_split:keyboard_split:flash

@@ -6,6 +6,10 @@
   #include "handwired.h"
 #endif
 
+#ifdef KEYBOARD_jian_handwired_split
+  #include "handwired_split.h"
+#endif
+
 #ifdef KEYBOARD_jian_rev1
   #include "rev1.h"
 #endif

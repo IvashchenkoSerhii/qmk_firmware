@@ -68,22 +68,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_RAISE] = LAYOUT(
-  _______, _______,         KC_PSLS, KC_P7,   KC_P8,   KC_P9,   KC_PMNS,      KC_VOLU, KC_HOME, KC_PSCR, KC_PGUP, KC_SLCK, KC_CAPS,        _______,
+  _______, _______,         KC_PSLS, KC_P7,   KC_P8,   KC_P9,   KC_PMNS,      KC_VOLU, KC_HOME, KC_PSCR, KC_PGUP, _______, _______,        _______,
            LCTL_T(KC_EQL),  KC_PAST, KC_P4,   KC_P5,   KC_P6,   KC_PPLS,      KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,  RCTL_T(KC_APP),
-           _______,         KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_PCMM,      KC_VOLD, KC_END,  KC_MUTE, KC_PGDN, KC_PAUS, _______,
+           _______,         KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_PCMM,      KC_VOLD, KC_END,  KC_MUTE, KC_PGDN, _______, _______,
                                               _______, _______, _______,      _______, _______, _______
 ),
 
-/* [_ADJUST] = LAYOUT_symmetric( */
-/*   RESET,   DEBUG,          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, */
-/*            XXXXXXX,        WORKMAN, COLEMAK, DVORAK,  QWERTY,  XXXXXXX, */
-/*            TG(_BCKLT_ADJ), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, */
-/*                                              _______, SW_TG,   _______ */
-/* ), */
-
 [_ADJUST] = LAYOUT_symmetric(
-  RESET,   DEBUG,          XXXXXXX, XXXXXXX, XXXXXXX, UUIDMacro, XXXXXXX,
-           KC_NLCK,        WORKMAN, COLEMAK, DVORAK,  QWERTY,  XXXXXXX,
+  QK_BOOT, DB_TOGG,        XXXXXXX, XXXXXXX, XXXXXXX, UUIDMacro, XXXXXXX,
+           KC_NUM,         WORKMAN, COLEMAK, DVORAK,  QWERTY,  XXXXXXX,
            TG(_BCKLT_ADJ), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                                              _______, SW_TG,   _______
 ),

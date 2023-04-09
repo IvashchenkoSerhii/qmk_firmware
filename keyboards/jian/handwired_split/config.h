@@ -33,5 +33,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL
 #define SOFT_SERIAL_PIN D1
 
-/* #define SPLIT_HAND_PIN C6 */
 #define SPLIT_HAND_PIN F4
+
+#define USB_SUSPEND_WAKEUP_DELAY 200
